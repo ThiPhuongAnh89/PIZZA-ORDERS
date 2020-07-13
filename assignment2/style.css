@@ -1,0 +1,168 @@
+header {
+	text-align: center;
+}
+
+.contact td, th {
+	font-family: Gotham;
+	font-size: 16px;
+}
+
+
+.error {
+	background-color: red;
+}
+
+
+/* source: in lab 3*/
+.header {
+    background-color: red;
+    background-size: 100% 100%;
+    margin-bottom: 3%;
+}
+/* source: in lab 3*/
+.header h1, .header p {
+    color: #fff;
+    font-family: Kaushan Script;
+    line-height: 0.9em;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+
+.background {
+    background-image: url("image/geometry2.png");
+}
+
+.center {
+    text-align: center
+}
+
+table.form1 {
+    border-color: blue;
+    border: solid;
+    border-style:inset;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 60%;
+}
+
+table.form2 {
+    border-color: blue;
+    border: solid;
+    border-style:inset;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 40%;
+}
+
+table.form3 {
+   
+   
+   
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 70%;
+}
+
+table.form4 {
+   
+   
+   
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: lightgrey;
+    width: 100%;
+}
+
+
+body.background {
+  
+  /*  / background-image: url("../Image/background.jpg");
+    source: https://www.pexels.com/photo/green-snake-plant-on-white-ceramic-pot-1445416/*/
+    background-size: cover;
+   
+}
+
+
+.center
+{
+	
+	text-align: center;
+}
+
+td.right{
+    text-align: right;
+}
+input.text {
+
+  width: 60%;
+  padding: 8px 20px;
+  margin: 4px 0;
+    border-radius: 4px;
+    
+}
+
+.green {
+  
+    
+    background-color: green;
+color: white;
+height: 30px;
+border-radius: 4px;
+}
+
+.pink {
+  
+    
+    background-color: papayawhip;
+color: black;
+height: 30px;
+border-radius: 4px;
+}
+
+td.link {
+    
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+img{
+    height: 80px;
+    width: 80px;
+}
+ /* display: inline-block;
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+    
+}
+
+/*
+
+input[type=email] {
+
+  width: 60%;
+  padding: 8px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+ 
+.input1{
+  width: 80%;
+  padding: 8px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+*/

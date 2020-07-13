@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="java.js"></script>
+</head>
+
+
+<body class="background" onload="initFunction()">
+    <div class="row header">
+
+        <h1 class="center">Welcome to City Delicatessen </h1>
+        <h2 class="center">Today is: <span id="dtfield"></span></h2>
+        <br>
+        <br>
+    </div>
+
+    <div class="center">
+
+     
+
+            <table class="form2">
+
+                <tr>
+                    <td>
+                        <form id= "form1" onsubmit="return false;">
+
+                            <h3> PIZZA ORDERS</h3>
+
+                            <fieldset>
+                                <legend><b>Size</b></legend>
+                                <table class="form3">
+                                    <tr>
+
+
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="pizzaSize" value="8.50" checked id="Small pizza "><br>Small <br> $8.50 </label></p>
+                                        </td>
+                                        <td>
+
+                                            <p><label class="choice"> <input type="radio" name="pizzaSize" value="11.50" id="Medium pizza "><br>Medium <br> $11.50</label></p>
+                                        </td>
+                                        <td>
+
+                                            <p><label class="choice"> <input type="radio" name="pizzaSize" value="14.00" id="Large "><br>Large <br> $14.00 </label></p>
+                                        </td>
+                                        <td>
+
+                                            <p><label class="choice"> <input type="radio" name="pizzaSize" value="16.50" id="Extra Large pizza "><br>Extra Large <br>$16.50 </label>
+                                            </p>
+                                        </td>
+
+
+                                    </tr>
+                                </table>
+                            </fieldset>
+
+                            <table class="form3">
+                                <tr>
+                                    <td>
+                                        <p><b>Quantity</b><label class="choice"> <input type="number"  min="1" id="quantityPZ" value="0" required /></label></p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <fieldset>
+                                <legend><b>Type</b></legend>
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="pizzaSpecial" id="Super Cheesy" checked /><br>Super Cheesy </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="pizzaSpecial" id="Extra Meaty " /><br>Extra Meaty </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="pizzaSpecial" id="Really Veggie " /><br>Really Veggie </label></p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><b>Extra Toppings ($1.75 each)</b></legend>
+                                <table class="form3 ">
+                                    <tr>
+                                        <td>
+                                            <p><label class="choice"> <input type="checkbox" name="pizzaExtras" value="1.75" id="Extra cheese" /><br>Extra Cheese</label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="checkbox" name="pizzaExtras" value="1.75" id="Pepperoni" /><br>Pepperoni </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="checkbox" name="pizzaExtras" value="1.75" id="Mushrooms" /><br>Mushrooms </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="checkbox" name="pizzaExtras" value="1.75" id="Bacon " /><br>Bacon</label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="checkbox" name="pizzaExtras" value="1.75" id="Olives " /><br>Olives</label></p>
+                                        </td>
+
+
+                                    </tr>
+                                </table>
+
+                            </fieldset>
+                            <p><input class="pink" type="submit" value="Add Pizza to cart" onclick="addPizzatocart()" /></p>
+                        </form>
+                        <form id ="form2" onsubmit="return false;">
+
+
+                            <hr>
+                            <h3> SANDWICH ORDERS</h3>
+
+                            <fieldset>
+                                <legend><b>Size</b></legend>
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><label class="choice"><input type="radio" name="SandwichType" value="7.50" id="All Garden Vegetarian" checked /><br>All Garden Vegetarian <br> $7.50 </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"><input type="radio" name="SandwichType" value="8.50" id="Big Beef on a Bun" /><br>Big Beef on a Bun <br> $8.50 </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="SandwichType" value="9.50" id="Mixed Grill " /><br>Mixed Grill <br>$9.50</label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="SandwichType" value="9.50" id="Grilled Pork " /><br>Grilled Pork <br>$9.50 </label></p>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><b>Quantity</b><label class="choice"> <input type="number"  min="1" id="swQuantity" value="0" required /></label></p>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </fieldset>
+                            <p><label class="choice"> <input class="pink" type="submit" value="Add Sandwich to cart" onclick="addSandwichtocart()" /></label></p>
+
+
+                        </form>
+                        <form id = "form3" onsubmit="return false;">
+                            <hr>
+                            <h3> DRINK ORDERS</h3>
+
+                            <fieldset>
+                                <legend><b>Type</b></legend>
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><label class="choice"><input type="radio" name="drinkType" id="Cola" checked /><br>Cola</label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"><input type="radio" name="drinkType" id="Orange " /><br>Orange </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="drinkType" id="Lemon " /><br>Lemon </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="drinkType" id="Root Beer  " /><br>Root Beer </label></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend><b>Sizes</b></legend>
+
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><label class="choice"><input type="radio" name="drinkSize" value="1.25" checked id="Small drinks " checked /><br>Small - $1.25 </label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="drinkSize" value="1.75" id="Medium drinks " /><br>Medium- $1.75</label></p>
+                                        </td>
+                                        <td>
+                                            <p><label class="choice"> <input type="radio" name="drinkSize" value="2.00" id="Large drinks" /><br>Large - $2.00 </label></p>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <table class="form3">
+                                    <tr>
+                                        <td>
+                                            <p><b>Quantity</b><label class="choice"> <input type="number"  min="1" id="quantityDrink" value="0" required /><br></label></p>
+
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </fieldset>
+                            <p><input class="pink" type="submit" value="Add Drinks to cart" onclick="addDrinkstocart()" />
+                            </p>
+                        </form>
+
+                    </td>
+                </tr>
+            </table>
+           <!-- <form onsubmit="return false;"> --->
+        <form id= "form4" class="myForm" method="post" action="#" onsubmit="calculate();return false;">
+
+            <table class="form2">
+                <tr>
+                    <td>
+
+                        <h2> CONTACT INFORMATION</h2>
+
+                        <table class="form4">
+                            <tr>
+                                <td class="right">
+
+                                    <label> First Name </label></td>
+                                <td>
+                                    <input  size="20" type="text" name="fname" id="fname" pattern="[a-zA-Z-]{1,25}" placeholder="Enter a-z or A-Z  " minlength="1" maxlength="25" title="First Name may not contain any numbers (maximum 25 letters).">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="right">
+                                    <label>Last Name </label>
+                                </td>
+                                <td> <input  pattern="[A-Za-z-]{1,25}" type="text" name="lname" id="lname" placeholder="Enter a-z or A-Z " title="Last Name may not contain any numbers (maximum 25 letters).">
+
+                                </td>
+                            </tr>
+                                                        <tr>
+                                <td class="right">
+                                    <label>Email</label></td>
+                                <td> <input  pattern="^([a-zA-Z0-9-.]+)@([a-zA-Z0-9-.]+).([a-zA-Z]{2,5})$" type="email" name="email_add" id="email" placeholder="youremail@gmail.com" title="Please enter your email" />
+                                    <!-- Email Regex Pattern Source: https://www.google.com/search?rlz=1C1SQJL_enCA830CA830&ei=17EsXdKGPJu50PEP7fmg0A0&q=email++regular+pattern&oq=email++regular+pattern&gs_l=psy-ab.3..0i7i30l2j0i30j0i8i30l7.1356.2688..2906...0.0..0.72.569.9......0....1..gws-wiz.......0i71j35i39j0i20i263j0j35i304i39j0i8i7i30.JndzZ1BO-3U -->
+                                </td>
+                            </tr>
+                             <tr>
+                                <td class="right"><label>Phone Number</label> </td>
+                                <td ><input  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" name="Telephone_number" id="number" placeholder="xxx-xxx-xxxx" title="Please enter ten numbers with the format xxx-xxx-xxxx" minlength="12" maxlength="12" /></td>
+                                 <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel -->
+                            </tr>
+                            <tr>
+                                <td class="right">
+                                    <label>Address </label></td>
+                                <td> <input  type="text" name="address" size="20" id="address" placeholder="ex: 1234 Main Street" title="ex: 1234 Main Street" /></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table class="form2">
+                <tr>
+                    <td>
+                        <p>
+                            <!--   <input class="submit" type="submit" onclick="calculate();" value="Complete Order"/>--->
+                            <input class ="green"  type="submit" onClick="setInformationCookie(); saveCustomerInfor();" value="Complete Order" />
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <table class="form2">
+                <tr>
+                    <td colspan="2">
+                        <span id="orderdetails"></span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</body>
+
+</html>
